@@ -1,5 +1,5 @@
 
-from bokeh.plotting import figure, show
+from bokeh.plotting import figure, show, output_file
 from bokeh.layouts import gridplot
 import pandas as pd
 import numpy as np
@@ -33,6 +33,7 @@ class Visualizer:
         """
         Show the collected plots in one suitable layout.
         """
+        output_file("plots.html")
         if not self.plots: 
             return
         layout = gridplot(self.plots, ncols=2)

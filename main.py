@@ -58,6 +58,10 @@ def main():
     vis.plot_test_mapping(matcher.test_mapping)
     vis.show_plots()
 
+    print("\nTraining Data results")
+    print(matcher.match_results)
+    print("\nTest Data results")
+    print(matcher.test_mapping.to_string())
 
 if (__name__ == "__main__"):
     # if this is the main application, start main()

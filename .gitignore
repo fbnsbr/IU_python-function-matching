@@ -4,5 +4,8 @@ __pycache__/
 venv/
 .env
 *.db
-*.html
 *.zip
+.ipynb_checkpoints/
+.pytest_cache/
+.idea/
+.vscode/
